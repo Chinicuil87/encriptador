@@ -1,0 +1,41 @@
+*{
+    font-family: 'Gruppo', sans-serif;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+*/
+
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,14,11,1) 9%, rgba(0,255,184,1) 100%);
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 30px;
+    inline
+}
+
+.caja{
+    position: relative;
+    margin: 20px auto;
+    width: 940px;
+    border: solid black;
+    border-radius: 15px;
+
+}
+
+.imagen-titulo{
+    position: static;
+    width: 30%;
+    margin: 0 auto;
+}
+
+footer{
+    padding: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,14,11,1) 9%, rgba(0,255,184,1) 100%);
+}
