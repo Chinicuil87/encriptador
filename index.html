@@ -10,58 +10,54 @@
         <link rel="stylesheet" href="./static/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="./static/img/proteger.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./static/img/aluraLogo.png" type="image/x-icon">
         <title>Encriptador</title>
 
 
     </head>
     <body>
 
-        <header class="encabezado">
-            <h1>Encriptador</h1>
-        </header>
-
         <main>
 
-            <section class="caja">
+            <section class="logo">
 
-            <h2>
-                <img src="./static/img/encriptar.png" alt="imagen de candado cerrado"  class="imagen-titulo">
-            </h2>
-
-            <form>
-
-                <label for="palabra">Palabra a encriptar.</label>
-                <input type="text">
-
-            </form>
+                <img src="./static/img/logo.png" alt="imagen de una letra a" class="imagen-logo">
 
             </section>
 
-            <section class="caja">
+            <section class="ingresar">
 
-            <h2>
-                <img src="./static/img/desencriptar.png" alt="imagen de candado cerrado"  class="imagen-titulo">
-            </h2>
+                <div class="texto">
+                    
+                <label for=""> <input type="text" placeholder="Ingrese el texto aqui"></label>
+               
 
-            <form>
+                </div>
 
-                <label for="palabra">Palabra a encriptar.</label>
-                <input type="text">
+                <div class="botones">
 
-            </form>
+                    <button class="button-encriptar">Encriptar</button>
+                    <button class="button-desencriptar">Desencriptar</button>
+
+                </div>
+
+            </section>
+
+            <section class="retorno">
+
+                <img src="./static/img/imagen.png" alt="imagen de persona con una lupa en el rostro" class="imagen-busqueda">
+                <p class="texto-niguno">
+                    Ningún mensaje fue encontrado
+                </p>
+                <p class="texto-desea">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+                <button>Copiar</button>
 
             </section>
 
         </main>
-
-        <footer>
-
-            <img src="./static/img/footer.png" alt="imagen de candado con escudo" class="imagen-pie">
-            <p class="copyright"> &copy; Copyright Cesar Lopez Orihuela - 2024</p>
-
-        </footer>
         
     </body>
 </html>

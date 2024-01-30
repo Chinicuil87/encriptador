@@ -1,51 +1,98 @@
-*{
-    font-family: 'Gruppo', sans-serif;
-}
-main{
-    height: 80vh;
-}
-
 /*
 /////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////
 */
 
-header{
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,14,11,1) 9%, rgba(0,255,184,1) 100%);
-    font-size: 35px;
+main{
+    display: flex;
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+.imagen-logo{
+    width: 120px;
+    height: 48px;
+    margin: 40px 0 936px 40px
+}
+
+.ingresar{
+    margin-top: 40px;
+    margin-left: 216px;
+}
+input{
+    background: #F3F5FC;;
+    margin: 128px 0 0 24px;
+    width: 577px;
+    height: 48px;
+    border: none;
+}
+
+input::placeholder{
+    width: 577px;
+    color: #0a3871;
+    font-size: 32px;
+}
+
+.botones{
+    display: flex;
+}
+.retorno{
+    background: white;
+    width: 400px;
+    height: 944px;
+    margin: 40px;
+    margin-left: 56px;
+    border-radius: 32px;
+}
+
+.imagen-busqueda{
+    width: 336px;
+    height: 304px;
+    margin-top: 243px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.texto-niguno{
+    color: var(--Gray-gray-500, #343A40);
     text-align: center;
-    color: white;
-    font-weight: bold;
-    padding: 30px;
-    inline
+    font-size: 24px;
+    font-weight: 700;
+    width: 336px;
+    height: 58px;
+    margin: 32px 32px 8px 32px;
 }
 
-.caja{
-    position: relative;
-    margin: 20px auto;
-    width: 940px;
-    height: 35vh;
-    border: solid black;
-    border-radius: 15px;
+.texto-desea{
+    color: var(--Gray-gray-400, #495057);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 336px;
+    height: 48px;
+    margin: 8px 32px 32px 32px;
 
 }
 
-.imagen-titulo{
-    position: static;
-    width: 10%;
-    margin: 10px auto;
+button{
+    width: 328px;
+    height: 67px;
+    text-align: center;
+    font-size: 16px;
+    padding: 24px;
+    border-radius: 24px;
 }
 
-footer{
-    align-items: center;
-    color: white;
-    padding: 20px;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,14,11,1) 9%, rgba(0,255,184,1) 100%);
+.button-encriptar{
+    background: #0a3871;
+    color: #ffffff;
+    margin: 669px 12px 24px 24px;
 }
 
-.imagen-pie{
-    width: 30px;
+.button-desencriptar{
+    background: #d8dfe8;
+    border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+    color: #0a3871;
+    margin: 669px 24px 24px 12px;
 }
