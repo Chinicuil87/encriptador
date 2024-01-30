@@ -33,7 +33,7 @@
 
                 <div class="texto">
                     
-                <textarea name="texto" id="texto" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea name="texto" onkeyup="mostrar(this.value)"  id="texto" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea>
                
 
                 </div>
@@ -45,8 +45,8 @@
 
                 <div class="botones">
 
-                    <button class="button-encriptar boton-general">Encriptar</button>
-                    <button class="button-desencriptar boton-general">Desencriptar</button>
+                    <button onclick="encriptar()" class="button-encriptar boton-general">Encriptar</button>
+                    <button onclick="desencriptar()" class="button-desencriptar boton-general">Desencriptar</button>
 
                 </div>
 
@@ -54,8 +54,8 @@
 
             <section class="retorno">
 
-                <div class="imagen-busqueda">
-
+                <div class="imagen-busqueda" id="resultado">
+                    
                 </div>
                 <p class="texto-niguno">
                     Ningún mensaje fue encontrado
@@ -68,5 +68,6 @@
 
         </main>
         
+        <script src="./static/js/principal.js"></script>
     </body>
 </html>
