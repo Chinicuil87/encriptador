@@ -4,19 +4,32 @@ function mostrar(){
     return texto;
 }
 
-// convierte el texto extraifo del html en una lista
+// convierte el texto en mayusculas
 function convertir(){
-    let textoLista = (mostrar()).split("");
+    let textoLista = ((mostrar()).toUpperCase());
     return textoLista;
 }
 
 // valida que el texto no contenga mayusculas ni acentos.
+
 function validar(){
+
+    let textoValidar = mostrar();
+    let textoMayusculas = convertir();
+    let numeroRepeticiones = textoValidar.length;
+    let incremento = 0;
+    
+    while (textoMayusculas.includes(textoValidar[incremento]) && incremento < numeroRepeticiones){
+        incremento ++;
+    } 
+    
+    alert('Procedemos a encriptar')
+    
 
 }
 
 function encriptar(){
-    let extraer = convertir();
+    let extraer = validar();
     alert(extraer);
 }
 
