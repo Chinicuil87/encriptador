@@ -1,4 +1,5 @@
-# encriptador
+# Encriptador
+
 Programa de encriptacion de texto.
 
 Parametros a tomar en cuenta.
@@ -29,3 +30,7 @@ Parametros a tomar en cuenta.
 1. Cuenta con boton de encriptar
 2. Cuenta con boton de desencriptar
 3. solo acepta texto en minusculas y sin acentos
+
+## Paramettos.
+
+
