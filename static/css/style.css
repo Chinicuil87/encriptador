@@ -1,12 +1,12 @@
 /*
 /////////////////////////////////////////////////////////////////////
-Style Decodificador
+STYLE DECODIFICADOR
 /////////////////////////////////////////////////////////////////////
 */
 
 /*
 /////////////////////////////////////////////////////////////////////
-General
+GENERAL
 /////////////////////////////////////////////////////////////////////
 */
 body{
@@ -17,21 +17,17 @@ body{
     height: 1024px;
 }
 
-main{
-    display: flex;
-    
-}
-
 /*
 /////////////////////////////////////////////////////////////////////
 Seccion del logo
 /////////////////////////////////////////////////////////////////////
 */
+
 .logo{
     background-image: url(../img/logo.png);
     width: 120px;
     height: 48px;
-    margin: 40px 0 0 40px
+    margin: 40px 80px 0 40px;
 }
 
 /*
@@ -39,19 +35,19 @@ Seccion del logo
 Seccion de ingresar
 /////////////////////////////////////////////////////////////////////
 */
+main{
+    display: flex;
+    
+}
 
 .ingresar{
-    width: 728px;
-    height: 944px;
-    margin-top: 40px;
-    margin-left: 56px;
-
+    width: 760px;
 }
 textarea{
     background: #F3F5FC;;
-    margin: 128px 0 0 24px;
-    width: 577px;
-    height: 448px;
+    padding-top: 168px;
+    width: 680px;
+    height:683px;
     color: #0a3871;
     font-size: 32px;
     border: 0;
@@ -68,13 +64,12 @@ textarea:focus{
 
 .mensaje-restriccion{
     display: flex;
-    margin: 253px 0 0 0;
+    margin: 0;
 }
 
 .signo{
     width: 16px;
     height: 16px;
-    margin: 0 0 0 24px;
 }
 
 .solo{
