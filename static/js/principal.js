@@ -16,16 +16,24 @@ function validar(){
 
     let textoValidar = mostrar();
     let textoMayusculas = convertir();
-    let numeroRepeticiones = textoValidar.length;
     let incremento = 0;
     
-    while (textoMayusculas.includes(textoValidar[incremento]) && incremento < numeroRepeticiones){
-        incremento ++;
-    } 
-    
-    alert('Procedemos a encriptar')
-    
+    console.log(incremento);
+    console.log(textoValidar[incremento]);
+    console.log(textoMayusculas);
+    console.log(textoMayusculas.length);
 
+    while (incremento <= textoMayusculas.length){
+
+        console.log(incremento + " "+ textoMayusculas[incremento]);
+        
+        if (textoValidar[incremento] === textoMayusculas[incremento]){
+            console.log('No se permiten mayusculas');
+        } else{
+            console.log("Se puede continuar");
+        }
+
+    }
 }
 
 function encriptar(){
