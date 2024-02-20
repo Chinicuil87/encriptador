@@ -22,26 +22,17 @@ function validar(){
     console.log(textoValidar[incremento]);
     console.log(textoMayusculas);
     console.log(textoMayusculas.length);
-
-    while (incremento <= textoMayusculas.length){
-
-        console.log(incremento + " "+ textoMayusculas[incremento]);
-        
-        if (textoValidar[incremento] === textoMayusculas[incremento]){
-            console.log('No se permiten mayusculas');
-        } else{
-            console.log("Se puede continuar");
-        }
-
-    }
 }
 
-function encriptar(){
-    let extraer = validar();
-    alert(extraer);
-}
-
-function desencriptar(){
-    alert('Mensaje desencriptado');
-}
-
+function encriptar() {
+    var texto = document.getElementById("texto").value;
+    var textoCifrado = texto.replace(/a/gi, "ai").replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+    document.getElementById("resultado").innerHTML = textoCifrado;
+  }
+  
+  function desencriptar() {
+    var texto = document.getElementById("texto").value;
+    var textoDescifrado = texto.replace(/ai/gi, "a").replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+    document.getElementById("resultado").innerHTML = textoDescifrado;
+  }
+  

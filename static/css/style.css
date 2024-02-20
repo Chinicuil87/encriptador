@@ -10,7 +10,6 @@ GENERAL
 /////////////////////////////////////////////////////////////////////
 */
 body{
-    border: solid red;
     display: flex;
     background: #F3F5FC;
     font-family: 'Inter', sans-serif;
@@ -115,13 +114,11 @@ Seccion de retorno
 */
 
 .text-retorno{
-    border: solid navy;
     width: 336;
     height: 781;
     margin: 32px;
 }
 .retorno{
-    border: solid blue;
     background: white;
     width: 400px;
     height: 944px;
@@ -159,6 +156,35 @@ Seccion de retorno
 
 }
 
+.nuevo-texto{
+    width: 336px;
+    height: 781px;
+    margin: 32px 32px 0 32px;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Inter', sans-serif;
+    color:#495057;
+}
+
+.boton-copiar{
+    padding: 0;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    background: Light blue;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    color: #0A3871;
+    margin: 32px;
+}
+.mostrar{
+    
+}
+
+.tex-retorno{
+    display: none;
+}
+
 /*
 /////////////////////////////////////////////////////////////////////
 Pantalla responsiba hasta 768px
@@ -168,12 +194,14 @@ Pantalla responsiba hasta 768px
 @media screen and (max-width: 768px){
 
     body{
+        border: solid red;
         display: block;
         width: 768px;
         height: 1174px;
     }
 
     main{
+        border: solid yellow;
         display: block;
         margin: 0;
         padding: 0;
@@ -183,19 +211,20 @@ Pantalla responsiba hasta 768px
         background-image: url(../img/Group\ 3.svg);
         width: 31.086px;
         height: 50.581px;
-        margin: 40px 0 0 40px;
+        margin: 76px 0 0 40px;
     }
 
     .ingresar{
-        width: 768px;
+        width: 688px;
+        border: solid blue;
         height: auto;
-        margin: 116px 0 0 0;   
+        margin: 114px 0 0 0;   
     }
 
     textarea{
-        width: 688px;
-        height: 548px;
-        margin: 0 40px 0px 40px;
+        margin: 0 40px 0 40px;
+        padding: 0;
+        height: 596px;
     }
 
     .mensaje-restriccion{
@@ -207,11 +236,11 @@ Pantalla responsiba hasta 768px
     }
 
     .button-encriptar{
-        margin: 16px 12px 64px 40px;
+        margin: 16px 12px 0 40px;
     }
     
     .button-desencriptar{
-        margin: 16px 40px 64px 12px;
+        margin: 16px 40px 0 12px;
     }
 
     .retorno{
