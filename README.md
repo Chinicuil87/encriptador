@@ -4,7 +4,7 @@ Programa de encriptacion de texto.
 
 Parametros a tomar en cuenta.
 
-# a. Estructura.
+# Estructura.
 
     1.  index.hmtml 
         Contiene toda la estructula de html que requiere el sitio.
