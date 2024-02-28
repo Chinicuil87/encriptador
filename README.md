@@ -4,7 +4,7 @@ Programa de encriptacion de texto.
 
 Parametros a tomar en cuenta.
 
-# a. Estructura.
+# Estructura.
 
     1.  index.hmtml 
         Contiene toda la estructula de html que requiere el sitio.
@@ -25,7 +25,7 @@ Parametros a tomar en cuenta.
         > js
             Contiene el archivo de javascript que contiene la interacciones con el sitio.
 
-# b. Contenido.
+# Contenido.
 
 1. Cuenta con boton de encriptar
 2. Cuenta con boton de desencriptar
