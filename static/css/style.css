@@ -178,16 +178,16 @@ Seccion de retorno
     margin: 32px;
 }
 .mostrar{
-    
+    display: none;
 }
 
 .tex-retorno{
-    display: none;
+
 }
 
 /*
 /////////////////////////////////////////////////////////////////////
-Pantalla responsiba hasta 768px
+Pantalla responsiba hasta 768px 1174px
 /////////////////////////////////////////////////////////////////////
 */
 
@@ -201,7 +201,6 @@ Pantalla responsiba hasta 768px
     }
 
     main{
-        border: solid yellow;
         display: block;
         margin: 0;
         padding: 0;
@@ -209,21 +208,21 @@ Pantalla responsiba hasta 768px
 
     .logo{
         background-image: url(../img/Group\ 3.svg);
-        width: 31.086px;
-        height: 50.581px;
-        margin: 76px 0 0 40px;
+        width: 31.09px;
+        height: 50.58px;
+        margin: 73.42px 0 0 40px;
     }
 
     .ingresar{
-        width: 688px;
-        border: solid blue;
+        width: 100%;
         height: auto;
-        margin: 114px 0 0 0;   
+        margin: 116px 0 0 0;   
     }
 
     textarea{
         margin: 0 40px 0 40px;
         padding: 0;
+        width: 688px;
         height: 596px;
     }
 
@@ -231,41 +230,69 @@ Pantalla responsiba hasta 768px
         margin: 0 0 0 40px;
     }
 
+    .botones{
+        width: 100%;
+        margin: 0;
+    }
+
     .boton-general{
+        margin: 0;
         width: 332px;
     }
 
     .button-encriptar{
         margin: 16px 12px 0 40px;
     }
-    
+
     .button-desencriptar{
         margin: 16px 40px 0 12px;
     }
 
     .retorno{
-        width: 688px;
-        height: 133px;
-        margin: 0 40px 40px 40px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .imagen-busqueda{
-        background: none;
-        width: 0;
-        height: 0;
-        margin: 0;
-        padding: 0;
+        display: none;
+    }
+
+    .mostrar{
+        width: 688px;
+        height: 133px;
+        border-radius: 32px;
+        margin-top: 65px;
+        margin-left: 40px;
     }
 
     .texto-niguno{
         width: 624px;
         height: 29px;
     }
-    
+
     .texto-desea{
         width: 624px;
         height: 24px;
-    
+    }
+
+    .tex-retorno{
+        border: solid blue;
+        width: 688px;
+        height: 343px;
+        margin-top: 65px;
+        margin-left: 40px;
+        border-radius: 32px;
+    }
+
+    .nuevo-texto{
+        width: 624px;
+        height: 180px;
+    }
+
+    .boton-copiar{
+        width: 624px;
     }
 }
 
