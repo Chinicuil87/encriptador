@@ -14,8 +14,8 @@ body{
     background: #F3F5FC;
     font-family: 'Inter', sans-serif;
     width: 1440px;
-    height: 1024px;
-}
+    height: auto;
+    }
 
 /*
 /////////////////////////////////////////////////////////////////////
@@ -42,9 +42,10 @@ main{
 
 .ingresar{
     width: 760px;
+    height: 1024px;
 }
 textarea{
-    background: #F3F5FC;;
+    background: #F3F5FC;
     padding-top: 168px;
     width: 680px;
     height:683px;
@@ -113,26 +114,36 @@ Seccion de retorno
 /////////////////////////////////////////////////////////////////////
 */
 
-.text-retorno{
-    width: 336;
-    height: 781;
-    margin: 32px;
-}
 .retorno{
-    background: white;
+    width: 440px;
+    height: 1024px;
+}
+
+.mostrar{
+    margin-top: 40px;
+    background: #FFFFFF;
     width: 400px;
     height: 944px;
-    margin-top: 40px;
     border-radius: 32px;
+    border-top: solid 1px #ffffff;
+}
+
+.tex-retorno{
+    margin-top: 40px;
+    background: #FFFFFF;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    border-top: solid 1px #ffffff;
+    display: none;
 }
 
 .imagen-busqueda{
     background-image: url(../img/imagen.png);
     width: 336px;
     height: 304px;
-    margin-top: 243px;
     margin-left: 32px;
-    margin-right: 32px;
+    margin-top: 242px;
 }
 
 .texto-niguno{
@@ -177,13 +188,7 @@ Seccion de retorno
     color: #0A3871;
     margin: 32px;
 }
-.mostrar{
-    display: none;
-}
 
-.tex-retorno{
-
-}
 
 /*
 /////////////////////////////////////////////////////////////////////
@@ -194,10 +199,9 @@ Pantalla responsiba hasta 768px 1174px
 @media screen and (max-width: 768px){
 
     body{
-        border: solid red;
         display: block;
         width: 768px;
-        height: 1174px;
+        height: auto;
     }
 
     main{
@@ -241,11 +245,11 @@ Pantalla responsiba hasta 768px 1174px
     }
 
     .button-encriptar{
-        margin: 16px 12px 0 40px;
+        margin: 18px 12px 0 40px;
     }
 
     .button-desencriptar{
-        margin: 16px 40px 0 12px;
+        margin: 18px 40px 0 12px;
     }
 
     .retorno{
@@ -255,19 +259,24 @@ Pantalla responsiba hasta 768px 1174px
         height: 100%;
     }
 
+
+
     .imagen-busqueda{
         display: none;
     }
 
     .mostrar{
+        border: solid 0.5px white ;
         width: 688px;
         height: 133px;
         border-radius: 32px;
-        margin-top: 65px;
+        margin-top: 64px;
         margin-left: 40px;
+        margin-bottom: 35px;
     }
 
     .texto-niguno{
+        margin-top: 32px;
         width: 624px;
         height: 29px;
     }
@@ -278,11 +287,11 @@ Pantalla responsiba hasta 768px 1174px
     }
 
     .tex-retorno{
-        border: solid blue;
         width: 688px;
         height: 343px;
         margin-top: 65px;
         margin-left: 40px;
+        margin-bottom: 32px;
         border-radius: 32px;
     }
 
@@ -298,14 +307,13 @@ Pantalla responsiba hasta 768px 1174px
 
 /*
 /////////////////////////////////////////////////////////////////////
-Pantalla responsiba hasta 375px
+Pantalla responsiba hasta 375px 933px
 /////////////////////////////////////////////////////////////////////
 */
 
 @media screen and (max-width: 375px){
 
     body{
-        border: solid red;
         display: block;
         width: 375px;
         height: 933px;
@@ -315,7 +323,7 @@ Pantalla responsiba hasta 375px
         background-image: url(../img/Group\ 3.svg);
         width: 32px;
         height: 48px;
-        margin: 24px 0 24px 16px
+        margin: 24px 0 0 16px
     }
 
     .ingresar{
@@ -324,10 +332,11 @@ Pantalla responsiba hasta 375px
     }
 
     .texto{
-        margin-top: 56px;
+        margin-top: 80px;
     }
 
     textarea{
+        font-size: 32px;
         width: 343px;
         height: 299px;
         margin: 0;
@@ -360,13 +369,18 @@ Pantalla responsiba hasta 375px
     .button-desencriptar{
         margin: 0;
         margin-top: 24px;
-        margin-bottom: 64px;
     }
 
     .retorno{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mostrar{
+        margin: 61px 0 38px 24px;
         width: 327px;
         height: 186px;
-        margin: 0 auto;
     }
 
     .texto-niguno{
@@ -379,7 +393,6 @@ Pantalla responsiba hasta 375px
     .texto-desea{
         width: 263px;
         height: 48px;
-    
     }
 
 }
