@@ -2,8 +2,6 @@
 
 Programa de encriptacion de texto.
 
-Parametros a tomar en cuenta.
-
 # Estructura.
 
     1.  index.hmtml 
