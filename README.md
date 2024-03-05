@@ -29,6 +29,8 @@ Programa de encriptacion de texto.
 2. Cuenta con boton de desencriptar
 3. solo acepta texto en minusculas y sin acentos
 
-## Paramettos.
+## Parametros.
 
+> Solo letras minusculas.
+> No se admiten asentos ni caracteres especiales.
 
