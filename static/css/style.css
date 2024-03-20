@@ -74,7 +74,7 @@ textarea:focus{
 }
 
 .solo{
-    width: 205px;
+    width: 250px;
     height: auto;
     color: var(--Gray-gray-400, #495057);
     font-size: 12px;
@@ -126,7 +126,6 @@ Seccion de retorno
     height: 944px;
     border-radius: 32px;
     border-top: solid 1px #ffffff;
-    display: none;
 }
 
 .tex-retorno{
@@ -170,11 +169,13 @@ Seccion de retorno
 .nuevo-texto{
     width: 336px;
     height: 781px;
+    padding-top: 0;
     margin: 32px 32px 0 32px;
     font-size: 24px;
     line-height: 36px;
     font-family: 'Inter', sans-serif;
     color:#495057;
+    background: #ffffff768;
 }
 
 .boton-copiar{
@@ -187,6 +188,15 @@ Seccion de retorno
     font-size: 16px;
     color: #0A3871;
     margin: 32px;
+}
+
+footer{
+    border: solid yellow;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 980px;
 }
 
 
@@ -298,6 +308,7 @@ Pantalla responsiba hasta 768px 1174px
     .nuevo-texto{
         width: 624px;
         height: 180px;
+        font-size: 24px;
     }
 
     .boton-copiar{
@@ -314,7 +325,6 @@ Pantalla responsiba hasta 375px 933px
 @media screen and (max-width: 375px){
 
     body{
-        border: solid red;
         display: block;
         width: 375px;
         height: 933px;

@@ -12,39 +12,71 @@ function convertir(){
     return textoMinusculas;
 }
 
+// Cambia el stylo del display para mostrar en texto cambiado y ocultar imagen
+function cambiosStyle(){
+    document.getElementById("tex-retorno").style.display="";
+    document.getElementById("mostrar").style.display='none';
+}
+
+// Funcion para encriptar
 function encriptar(){
-    let textoMayusculas = convertir();
-    console.log(textoMinusculas);
+
+    let textoEncriptado = convertir()
+
+                                    .replace(/e/img, "enter")
+                                    .replace(/o/img, "ober")
+                                    .replace(/i/img, "imes")
+                                    .replace(/a/img, "ai")
+                                    .replace(/u/img, "ufat");
+   
+   if(textoEncriptado.length > 0){
+
+        console.log(textoEncriptado);
+        cambiosStyle();
+        document.getElementById('nuevo-texto').value=textoEncriptado;
+        
+   } else{
+
+    alert("Coloca el texto a Encriptar");
+
+   }
+
 }
 
+// Funcion de Desencriptar
 function desencriptar(){
-    console.log("Boton desencriptar")
-}
 
-// valida que el texto no contenga mayusculas ni acentos.
-
-function validar(){
-
-    let textoValidar = mostrar();
-    let textoMayusculas = convertir();
-    let incremento = 0;
+    let textoDesencriptar = convertir()
+                                    .replace(/enter/gi, "e")
+                                    .replace(/ober/gi, "o")
+                                    .replace(/imes/img, "i")
+                                    .replace(/ai/img, "a")
+                                    .replace(/ufat/img, "u");
     
-    console.log(incremento);
-    console.log(textoValidar[incremento]);
-    console.log(textoMayusculas);
-    console.log(textoMayusculas.length);
+    if(textoDesencriptar.length > 0){
+
+        console.log(textoDesencriptar);
+        cambiosStyle();
+        document.getElementById('nuevo-texto').value=textoDesencriptar;
+                                        
+    } else{
+
+        alert("Coloca el texto a Desencriptar");
+    }
+
 }
 
+// Funcion copiar.
+function copiar(){
+    let textCopia = document.getElementById('nuevo-texto').value;
+    navigator.clipboard.writeText(textCopia)
+    alert("Texto copiado con exito.");
+    inicial();
+}
 
-// function encriptar() {
-//     var texto = document.getElementById("texto").value;
-//     var textoCifrado = texto.replace(/a/gi, "ai").replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/o/gi, "ober").replace(/u/gi, "ufat");
-//     document.getElementById("resultado").innerHTML = textoCifrado;
-//   }
-  
-//   function desencriptar() {
-//     var texto = document.getElementById("texto").value;
-//     var textoDescifrado = texto.replace(/ai/gi, "a").replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ober/gi, "o").replace(/ufat/gi, "u");
-//     document.getElementById("resultado").innerHTML = textoDescifrado;
-//   }
-  
+// Funcion que que reinicia para poder volver encriptar o desencriptar.
+function inicial(){
+    document.getElementById('texto').value='';
+    document.getElementById("tex-retorno").style.display="none";
+    document.getElementById("mostrar").style.display='';
+}

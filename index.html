@@ -8,9 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./static/css/reset.css">
         <link rel="stylesheet" href="./static/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https: //fonts.googleapis.com/css2? family= Inter & display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="shortcut icon" href="./static/img/aluraLogo.png" type="image/x-icon">
         <title>Encriptador</title>
 
@@ -54,9 +53,9 @@
 
             <section class="retorno">
 
-                <div class="tex-retorno">
+                <div class="tex-retorno" id="tex-retorno" style="display: none;">
 
-                    <p class="nuevo-texto"></p>
+                    <textarea name="nuevo-texto" id="nuevo-texto" class="nuevo-texto" cols="30" rows="10"></textarea>
 
                     <div class="botones">
 
@@ -66,7 +65,7 @@
 
                 </div>
 
-                <div class="mostrar">
+                <div class="mostrar" id="mostrar">
 
                     <div class="imagen-busqueda" id="resultado">
                     
@@ -85,13 +84,14 @@
             </section>
 
         </main>
+        <footer>
+
+            © Primer Challenges Alura | Cesar Lopez Orihuela | 2024
+
+        </footer>
+
+        
         
         <script src="./static/js/principal.js"></script>
     </body>
 </html>
-
-<!-- 
-<input type="text" id="input-texto" placeholder="Ingrese un texto">
-<button onclick="encriptar()">Encriptar</button>
-<button onclick="desencriptar()">Desencriptar</button>
-<p id="resultado"></p> -->
